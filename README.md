@@ -5,7 +5,8 @@
 [![R-CMD-check](https://github.com/ghmigliorini/pacotinho/workflows/R-CMD-check/badge.svg)](https://github.com/ghmigliorini/pacotinho/actions)
 <!-- badges: end -->
 
-O objetivo do pacotinho é apenas testar a construção de um pacote R, entretanto todas as funções implementadas são funcionais
+O objetivo do pacotinho é apenas testar a construção de um pacote R, entretanto todas as funções implementadas são funcionais. As funções implementadas são: média, mediana, moda, desvio padrão, erro padrão e resumo estatístico.
+
 
 ## Instalação
 
@@ -18,20 +19,16 @@ devtools::install_github("ghmigliorini/pacotinho")
 
 ## Exemplo
 
-### vetor de números aleatórios
-a <- sample(90, 40, replace = TRUE)
-
-### calcula a média
-media(a)
-
-### calcula mediana
-mediana(a)
-
 ``` r
 library(pacotinho)
-## basic example code
+
+# cria vetor aleatório
 a <- sample(90, 40, replace = TRUE)
+
+# calcula a média
 media(a)
+
+# calcula a mediana
 mediana(a)
 ```
 
